@@ -30,32 +30,55 @@ function WeatherApp() {
 
   return (
     <div className="container">
-      <div className="search-container">
+      <div className="input-group mb-3">
         <input
           type="text"
-          id="city-input"
+          className="form-control"
+          placeholder="Enter city name"
+          aria-label="City name"
+          aria-describedby="basic-addon2"
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          placeholder="Enter city name"
         />
-        <button id="search-button" onClick={fetchWeather}>Search</button>
+        <div className="input-group-append">
+          <button 
+            className="btn btn-outline-secondary search-button" 
+            type="button" 
+            onClick={fetchWeather}
+          >
+            Search
+          </button>
+        </div>
       </div>
       {loading && <p>Loading data…</p>}
       <div className="weather-cards">
         {weatherData && (
           <div className="weather-card">
-           
             <div className="weather-details">
-              <p>Temperature {weatherData.current.temp_c}°C</p>
-              <p>Humidity {weatherData.current.humidity}%</p>
-              <p>Condition {weatherData.current.condition.text}</p>
-              <p>Wind Speed {weatherData.current.wind_kph} kph</p>
+              <div>
+                <p className="label">Temperature</p>
+                <p>{weatherData.current.temp_c}°C</p>
+              </div>
+              <div>
+                <p className="label">Humidity</p>
+                <p>{weatherData.current.humidity}%</p>
+              </div>
+              <div>
+                <p className="label">Condition</p>
+                <p>{weatherData.current.condition.text}</p>
+              </div>
+              <div>
+                <p className="label">Wind Speed</p>
+                <p>{weatherData.current.wind_kph} kph</p>
+              </div>
             </div>
           </div>
         )}
       </div>
     </div>
   );
+  
+  
 }
 
 export default WeatherApp;

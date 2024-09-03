@@ -36,22 +36,8 @@ p {
   margin-top: 20px;
 }
 
-.weather-card {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.weather-card h3 {
-  margin-right: 20px;
-  font-size: 18px;
-  flex-shrink: 0;
-}
+
 
 .weather-details {
   display: flex;
@@ -112,5 +98,34 @@ p {
   background-color: darkgreen;
   border-color: darkgreen;
 }
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-value {
+  font-size: 18px;
+  margin: 0;
+}
+
 
 

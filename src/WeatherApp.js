@@ -30,23 +30,27 @@ function WeatherApp() {
 
   return (
     <div className="container">
-      <h1>Weather Application</h1>
-      <input
-        type="text"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        placeholder="Enter city name"
-      />
-      <button onClick={fetchWeather}>Search</button>
+      <div className="search-container">
+        <input
+          type="text"
+          id="city-input"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="Enter city name"
+        />
+        <button id="search-button" onClick={fetchWeather}>Search</button>
+      </div>
       {loading && <p>Loading data…</p>}
       <div className="weather-cards">
         {weatherData && (
           <div className="weather-card">
-            <h3>{weatherData.location.name}, {weatherData.location.country}</h3>
-            <p>Temperature: {weatherData.current.temp_c}°C</p>
-            <p>Humidity: {weatherData.current.humidity}%</p>
-            <p>Condition: {weatherData.current.condition.text}</p>
-            <p>Wind Speed: {weatherData.current.wind_kph} kph</p>
+           
+            <div className="weather-details">
+              <p>Temperature: {weatherData.current.temp_c}°C</p>
+              <p>Humidity: {weatherData.current.humidity}%</p>
+              <p>Condition: {weatherData.current.condition.text}</p>
+              <p>Wind Speed: {weatherData.current.wind_kph} kph</p>
+            </div>
           </div>
         )}
       </div>

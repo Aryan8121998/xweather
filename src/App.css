@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
@@ -127,5 +127,62 @@ p {
   margin: 0;
 }
 
+ */
 
+ .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-value {
+  font-size: 18px;
+  margin: 0;
+}
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  text-align: center;
+}
+
+.weather-details div {
+  margin: 10px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weather-details p {
+  margin: 0;
+  font-size: 16px;
+}
+.search-button {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.search-button:hover {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}

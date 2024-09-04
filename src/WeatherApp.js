@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import WeatherCard from './WeatherCard';
+
 function WeatherApp() {
   const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState(null);
@@ -53,32 +55,16 @@ function WeatherApp() {
       {loading && <p>Loading data...</p>}
       <div className="weather-cards">
         {weatherData && (
-          <div className="weather-card">
-            <div className="weather-details">
-              <div>
-                <p className="label">Temperature</p>
-                <p>{weatherData.current.temp_c}°C</p>
-              </div>
-              <div>
-                <p className="label">Humidity</p>
-                <p>{weatherData.current.humidity}%</p>
-              </div>
-              <div>
-                <p className="label">Condition</p>
-                <p>{weatherData.current.condition.text}</p>
-              </div>
-              <div>
-                <p className="label">Wind Speed</p>
-                <p>{weatherData.current.wind_kph} kph</p>
-              </div>
-            </div>
-          </div>
+          <>
+            <WeatherCard title="Temperature" data={`${weatherData.current.temp_c}°C`} />
+            <WeatherCard title="Humidity" data={`${weatherData.current.humidity}%`} />
+            <WeatherCard title="Condition" data={weatherData.current.condition.text} />
+            <WeatherCard title="Wind Speed" data={`${weatherData.current.wind_kph} kph`} />
+          </>
         )}
       </div>
     </div>
   );
-  
-  
 }
 
 export default WeatherApp;

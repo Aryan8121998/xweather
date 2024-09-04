@@ -1,133 +1,31 @@
-/* body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-
 .container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-input {
-  width: 80%;
-  padding: 10px;
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px 20px;
-  margin-left: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-p {
-  font-size: 18px;
-  color: #555;
-  margin-top: 20px;
+.search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .weather-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-
-
-
-.weather-details {
-  display: flex;
-  gap: 15px;
-}
-
-.weather-details p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-#city-input {
-  padding: 10px;
-  font-size: 16px;
-  flex-grow: 1;
-  margin-right: 10px;
-}
-
-#search-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.weather-details {
-  display: flex;
-  justify-content: space-around;
-  gap: 15px;
-  text-align: center;
-}
-
-.weather-details div {
-  margin: 10px;
-}
-
-.label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.weather-details p {
-  margin: 0;
-  font-size: 16px;
-}
-.search-button {
-  background-color: green;
-  color: white;
-  border-color: green;
-}
-
-.search-button:hover {
-  background-color: darkgreen;
-  border-color: darkgreen;
-}
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px; /* Adds equal spacing between cards */
   margin-top: 20px;
 }
 
 .weather-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  width: 200px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Ensures all cards take up equal space */
   text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-.card-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 
-.card-value {
-  font-size: 18px;
-  margin: 0;
-}
-
- */
 
  .cards-container {
   display: flex;
@@ -145,18 +43,10 @@ p {
 .weather-details {
   display: flex;
   justify-content: space-between;
-  
-  
+
 }
 
-.weather-details div {
-  margin: 50px;
-}
 
-.label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
 
 .search-button {
@@ -165,7 +55,4 @@ p {
   border-color: green;
 }
 
-.search-button:hover {
-  background-color: darkgreen;
-  border-color: darkgreen;
-}
+

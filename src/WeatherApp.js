@@ -50,7 +50,7 @@ function WeatherApp() {
           </button>
         </div>
       </div>
-      {loading && <p>Loading data…</p>}
+      {loading && <p>Loading data...</p>}
       <div className="weather-cards">
         {weatherData && (
           <div className="weather-card">
@@ -69,7 +69,7 @@ function WeatherApp() {
               </div>
               <div>
                 <p className="label">Wind Speed</p>
-                <p>{weatherData.current.wind_kph}kph</p>
+                <p>{weatherData.current.wind_kph} kph</p>
               </div>
             </div>
           </div>

@@ -3,19 +3,6 @@
   margin: 0 auto;
   padding: 20px;
 }
-
-.search-button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.weather-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px; /* Adds equal spacing between cards */
-  margin-top: 20px;
-}
-
 .weather-card {
   flex: 1; /* Ensures all cards take up equal space */
   text-align: center;
@@ -24,31 +11,12 @@
   border-radius: 5px;
   background-color: #f9f9f9;
 }
-
-
-
- .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-
-
-
-
-
 .weather-details {
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
 
 }
-
-
-
-
 .search-button {
   background-color: green;
   color: white;

@@ -50,7 +50,7 @@ function WeatherApp() {
           </button>
         </div>
       </div>
-      {loading && <p>Loading data…</p>}
+      {loading && <p>Loading data...</p>}
       <div className="weather-cards">
         {weatherData && (
           <div className="weather-card">
